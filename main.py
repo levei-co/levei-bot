@@ -5,6 +5,7 @@ from meli_bot import MeliBot
 
 app = Flask(__name__)
 bot = MeliBot()
+bot.train_with("chatterbot.corpus.portuguese.meli_support")
 
 @app.route("/bot", methods=['POST'])
 def get_bot_response():

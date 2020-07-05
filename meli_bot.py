@@ -10,11 +10,10 @@ class MeliBot:
   
   def __init__(self): 
     self.bot = ChatBot("MeliBOT")
-    self.train_bot()
   
-  def train_bot(self): 
+  def train_with(self, origin): 
     trainer = ChatterBotCorpusTrainer(self.bot)
-    trainer.train("chatterbot.corpus.portuguese.meli_support")
+    trainer.train(origin)
   
   def get_response(self, msg):
     resp = self.bot.get_response(msg)
