@@ -35,7 +35,7 @@ pytz==2020.1
 PyYAML==3.13
 regex==2020.6.8
 requests==2.24.0
-rsa==3.4.2
+rsa==4.7
 s3transfer==0.1.13
 six==1.15.0
 spacy==2.1.9
